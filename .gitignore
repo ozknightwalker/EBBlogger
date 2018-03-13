@@ -1,5 +1,13 @@
 *.pyc
 venv/
 
-#local db
+# local db
 *.sqlite3
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# Build
+build.zip
