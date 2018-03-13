@@ -25,7 +25,7 @@ SECRET_KEY = '29+azr#iql^qqnp_l@73_*&kv-728s0$1ge6e7w39c0=csz#x('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOSTS')]
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
 )
 
 MIDDLEWARE_CLASSES = (
