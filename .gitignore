@@ -11,3 +11,4 @@ venv/
 
 # Build
 build.zip
+www/*
